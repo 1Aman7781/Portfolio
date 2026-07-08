@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from './context/ThemeContext';
 import ScrollProgress from './components/ScrollProgress';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -22,7 +22,7 @@ export default function App() {
         <ScrollProgress />
         <Navbar />
         <main>
-          <Hero />
+          <Home />
           <About />
           <Skills />
           <Projects />
