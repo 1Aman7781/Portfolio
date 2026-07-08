@@ -83,17 +83,17 @@ export default function About() {
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1}
             className="relative flex justify-center"
           >
-            <div className={`relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl overflow-hidden ${isDark ? 'bg-linear-to-br from-indigo-500/20 to-purple-500/20 border border-white/10' : 'bg-linear-to-br from-indigo-100 to-purple-100 border border-indigo-200'}`}>
+            <div className={`relative w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden ${isDark ? 'bg-linear-to-br from-indigo-500/20 to-purple-500/20 border border-white/10' : 'bg-linear-to-br from-indigo-100 to-purple-100 border border-indigo-200'}`}>
               <img
                 src="/assets/profile.jpg"
                 alt="Aman Raj Kushwaha"
                 className="w-full h-full object-cover"
                 onError={e => {
-                  e.target.src = `https://ui-avatars.com/api/?name=Aman+Raj&size=400&background=6366f1&color=fff&bold=true`;
+                  e.target.src = `https://ui-avatars.com/api/?name=Aman+Kushwaha&size=400&background=6366f1&color=fff&bold=true&rounded=true`;
                 }}
               />
               {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-linear-to-t from-indigo-900/40 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-indigo-900/40 to-transparent rounded-full" />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-indigo-500/20 rounded-full blur-2xl" aria-hidden="true" />
