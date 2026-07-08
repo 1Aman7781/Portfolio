@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 import { personalInfo } from '../data/portfolioData';
@@ -28,11 +29,20 @@ export default function Contact() {
   const handleSubmit = async e => {
     e.preventDefault();
     setStatus('sending');
-    // Simulate send (replace with actual API call / EmailJS / Formspree)
-    await new Promise(r => setTimeout(r, 1500));
-    setStatus('sent');
-    setForm({ name: '', email: '', message: '' });
-    setTimeout(() => setStatus(null), 4000);
+    try {
+      await emailjs.send(
+        'service_z5fl1ts',
+        'template_cjrvf3e',
+        { from_name: form.name, from_email: form.email, message: form.message },
+        'dLvKTTGMTFAd6LP6u'
+      );
+      setStatus('sent');
+      setForm({ name: '', email: '', message: '' });
+      setTimeout(() => setStatus(null), 4000);
+    } catch {
+      setStatus('error');
+      setTimeout(() => setStatus(null), 4000);
+    }
   };
 
   const inputClass = `w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 border
@@ -115,6 +125,8 @@ export default function Contact() {
                   className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-white transition-all duration-200
                     ${status === 'sent'
                       ? 'bg-green-500 shadow-lg shadow-green-500/25'
+                      : status === 'error'
+                      ? 'bg-red-500 shadow-lg shadow-red-500/25'
                       : 'bg-linear-to-r from-indigo-500 to-purple-600 shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50'
                     }
                     ${status === 'sending' ? 'opacity-70 cursor-not-allowed' : ''}
@@ -127,6 +139,8 @@ export default function Contact() {
                     </>
                   ) : status === 'sent' ? (
                     <>✓ Message Sent!</>
+                  ) : status === 'error' ? (
+                    <>✗ Failed, try again</>
                   ) : (
                     <>
                       <FaPaperPlane size={15} />
