@@ -8,7 +8,7 @@ export const personalInfo = {
   phone: "+91-9336983706",
   location: "Noida, Uttar Pradesh, India",
   github: "https://github.com/1Aman7781",
-  linkedin: "https://www.linkedin.com/in/aman-raj-kushwaha-b7b8b5257/",
+  linkedin: "https://www.linkedin.com/in/aman-raj-kushwaha-978b512a3/",
   leetcode: "https://leetcode.com/u/Aman7714/",
   gfg: "https://www.geeksforgeeks.org/profile/aman788dz",
   resumeUrl: "/assets/frontendResume.pdf",
