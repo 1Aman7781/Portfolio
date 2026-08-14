@@ -87,6 +87,17 @@ export const skillCategories = [
 export const projects = [
   {
     id: 1,
+    title: "InterviewIQ AI",
+    description:
+      "AI-powered interview preparation platform built with the MERN stack and Gemini API. Features JWT authentication, PDF resume parsing, job description matching, and AI-generated technical questions, behavioral questions, skill gap analysis, and personalized preparation plans — all visualized through a responsive React.js dashboard.",
+    image: "/assets/interviewiq.png",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Gemini AI", "Tailwind CSS"],
+    github: "https://github.com/1Aman7781/InterviewIQ-AI",
+    live: null,
+    featured: true,
+  },
+  {
+    id: 2,
     title: "Employee Management System",
     description:
       "Role-based Employee Management System built using React.js, Context API, and Tailwind CSS featuring Admin and Employee dashboards with task management, task assignment, and real-time status tracking.",
@@ -97,7 +108,7 @@ export const projects = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "ShopPulse",
     description:
       "Modern MERN E-Commerce Platform with Stripe Payment integration, Cart management, Product Management, Order Management, and a full-featured Admin Dashboard.",
@@ -108,7 +119,7 @@ export const projects = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Quick Chat",
     description:
       "Real-time chat application with instant messaging, user authentication, and online presence indicators built with Socket.IO and Firebase Authentication.",
@@ -123,6 +134,23 @@ export const projects = [
 export const experience = [
   {
     id: 1,
+    role: "Full Stack Developer",
+    company: "InterviewIQ AI",
+    type: "Personal Project",
+    duration: "",
+    description: [
+      "Built an AI-powered interview preparation platform using the MERN stack and Gemini API.",
+      "Implemented JWT authentication with bcrypt password encryption and protected routes.",
+      "Developed a resume analysis pipeline by extracting text from PDFs and comparing with job descriptions.",
+      "Engineered AI prompts to generate technical questions, behavioral questions, skill gap analysis, and preparation plans.",
+      "Designed RESTful APIs and MongoDB schemas to manage users, AI reports, and report history.",
+      "Created a responsive React.js dashboard for resume uploads, report visualization, and navigation.",
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Gemini AI"],
+    color: "from-blue-500 to-cyan-500",
+  },
+  {
+    id: 2,
     role: "Frontend Developer",
     company: "Employee Management System",
     type: "Personal Project",
