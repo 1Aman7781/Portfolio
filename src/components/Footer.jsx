@@ -91,9 +91,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className={`flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
           <p className={`text-sm flex items-center gap-1.5 ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>
-            © {new Date().getFullYear()} Aman Raj Kushwaha. Made with
-            <FaHeart size={12} className="text-pink-500" />
-            using React & Tailwind CSS
+            © {new Date().getFullYear()} Aman Raj Kushwaha
           </p>
 
           {/* Back to top */}
@@ -102,7 +100,7 @@ export default function Footer() {
               whileHover={{ y: -3, scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               aria-label="Back to top"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-sm font-medium shadow-lg shadow-indigo-500/25 cursor-pointer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient from-indigo-500 to-purple-600 text-white text-sm font-medium shadow-lg shadow-indigo-500/25 cursor-pointer"
             >
               <FaArrowUp size={13} />
               Back to Top
