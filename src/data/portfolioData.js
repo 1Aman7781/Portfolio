@@ -15,7 +15,7 @@ export const personalInfo = {
 };
 
 export const stats = [
-  { value: "150+", label: "DSA Problems" },
+  { value: "200", label: "DSA Problems" },
   { value: "3+", label: "Projects" },
   { value: "2026", label: "Graduate" },
 ];
