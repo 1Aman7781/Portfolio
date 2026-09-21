@@ -11,7 +11,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/aman-raj-kushwaha-978b512a3/",
   leetcode: "https://leetcode.com/u/Aman7714/",
   gfg: "https://www.geeksforgeeks.org/profile/aman788dz",
-  resumeUrl: "/assets/frontendResume.pdf",
+  resumeUrl: "/assets/Resume.pdf",
 };
 
 export const stats = [
@@ -199,13 +199,13 @@ export const education = [
 export const achievements = [
   {
     id: 1,
-    title: "150+ DSA Problems",
+    title: "200+ DSA Problems",
     subtitle: "LeetCode & GeeksforGeeks",
     description:
-      "Solved 150+ Data Structures & Algorithms problems, strengthening problem-solving and analytical skills.",
+      "Solved 200+ Data Structures & Algorithms problems, strengthening problem-solving and analytical skills.",
     icon: "FaCode",
     color: "from-violet-500 to-purple-500",
-    stat: "150+",
+    stat: "200+",
   },
   {
     id: 2,
