@@ -39,7 +39,7 @@ export const aboutCards = [
     icon: "FaCode",
     title: "Problem Solving",
     description:
-      "Solved 150+ DSA problems on LeetCode and GeeksforGeeks, strengthening algorithmic thinking.",
+      "Solved 200+ DSA problems on LeetCode and GeeksforGeeks, strengthening algorithmic thinking.",
     color: "from-pink-500 to-rose-500",
   },
   {
